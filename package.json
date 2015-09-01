@@ -14,7 +14,9 @@
     "request": "^2.61.0"
   },
   "name": "horse-app",
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^4.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangzuo/horse-app.git"
