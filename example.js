@@ -3,7 +3,7 @@ var router = require('./');
 
 var app = express();
 
-app.use('/example', router({
+app.use('/horse', router({
   cacheDir: __dirname + '/cached'
 }));
 
