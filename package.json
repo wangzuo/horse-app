@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon example.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/tape/bin/tape test.js"
   },
   "author": "Wang Zuo",
   "license": "MIT",
@@ -15,6 +15,7 @@
   },
   "name": "horse-app",
   "devDependencies": {
+    "istanbul": "^0.3.19",
     "tape": "^4.2.0"
   },
   "repository": {
