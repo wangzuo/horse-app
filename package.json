@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon example.js",
-    "test": "node_modules/tape/bin/tape test.js"
+    "test": "node_modules/mocha/bin/mocha test.js"
   },
   "author": "Wang Zuo",
   "license": "MIT",
@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "istanbul": "^0.3.19",
-    "tape": "^4.2.0"
+    "mocha": "^2.3.0",
+    "supertest": "^1.1.0"
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,11 @@
   },
   "keywords": [
     "app",
-    "logo",
-    "screenshots",
-    "horse",
     "express",
+    "horse",
+    "logo",
     "middleware",
+    "screenshots",
     "service"
   ],
   "bugs": {
