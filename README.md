@@ -5,7 +5,7 @@
 ``` sh
 npm install horse-app --save
 ```
-horse-app works as an express middleware
+horse-app works as an express router
 
 ``` javascript
 var express = require('express');
@@ -23,10 +23,15 @@ app.listen(3991, function() {
 ```
 
 #### Available routes
-- /horse/info?term={term} - Search for app info
-- /horse/app/{app_id} - Get icon & screenshots of app
-- /horse/logo?key={key} - Get the icon of the first app in search result
-- /horse/logo/{app_id} - Get the icon of app
+- GET /horse/info?term={term}&market={market} - Search for app info
+- GET /horse/app/{app_id}&market={market} - Get icon & screenshots of app
+- GET /horse/logo?key={key}&market={market} - Get the icon of the first app in search result
+- GET /horse/logo/{app_id}?market={market} - Get the icon of app
+
+#### Available app markets
+- googleplay
+- itunes
+- wandoujia (China, Android)
 
 #### License
 MIT
