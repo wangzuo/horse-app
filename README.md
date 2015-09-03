@@ -1,5 +1,6 @@
 # horse-app
 [![Build Status](https://travis-ci.org/wangzuo/horse-app.svg?branch=master)](https://travis-ci.org/wangzuo/horse-app) [![codecov.io](http://codecov.io/github/wangzuo/horse-app/coverage.svg?branch=master)](http://codecov.io/github/wangzuo/horse-app?branch=master)
+
 [WIP] App information and images as a service
 ``` sh
 npm install horse-app --save
