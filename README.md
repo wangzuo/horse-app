@@ -23,7 +23,10 @@ app.listen(3991, function() {
 ```
 
 #### Available routes
-- http://localhost:3991/horse/logo?key=google
+- /horse/info?term={term} - Search for app info
+- /horse/app/{app_id} - Get icon & screenshots of app
+- /horse/logo?key={key} - Get the icon of the first app in search result
+- /horse/logo/{app_id} - Get the icon of app
 
 #### License
 MIT
