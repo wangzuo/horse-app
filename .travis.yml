@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "0.12"
 script:
-  - istanbul cover test.js
+  - istanbul cover node_modules/mocha/bin/mocha test.js
 after_success:
   - bash <(curl -s https://codecov.io/bash)
