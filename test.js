@@ -3,5 +3,4 @@ var router = require('./');
 var markets = require('./lib/markets');
 
 test('itunes', function(t) {
-  t.end();
 });
