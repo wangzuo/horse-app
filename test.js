@@ -1,11 +1,6 @@
-var express = require('express');
 var request = require('supertest');
-var router = require('./');
-var app = express();
-
-app.use('/horse', router({
-  cacheDir: __dirname + '/cached'
-}));
+var express = require('express');
+var app = require('./app');
 
 describe('GET /logo', function() {
   this.timeout(5000);
