@@ -3,7 +3,7 @@ var express = require('express');
 var app = require('./app');
 
 describe('GET /logo', function() {
-  this.timeout(5000);
+  this.timeout(10000);
 
   it('search with keywords from itunes', function(done) {
     request(app)
