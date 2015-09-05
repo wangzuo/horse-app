@@ -50,4 +50,21 @@ describe('GET /app/:appId', function() {
 });
 
 describe('GET /logo/:appId', function() {
+  it('wandoujia', function(done) {
+    request(app)
+      .get('/horse/logo/com.tencent.mm?market=wandoujia')
+      .expect(200, done);
+  });
+
+  it('googleplay', function(done) {
+    request(app)
+      .get('/horse/logo/com.tencent.mm?market=googleplay')
+      .expect(200, done);
+  });
+
+  // it('itunes', function(done) {
+  //   request(app)
+  //     .get('/horse/logo/502688624?market=itunes')
+  //     .expect(200, done);
+  // });
 });
